@@ -18,7 +18,7 @@
 
 <p>Ön İzleme</p>
 <video width="1024" height="768" controls>
-  <source src="../graduation-project-cagatayturkann/client/public/videos/graduation.mp4" type="video/mp4">
+  <source src="public/videos/graduation.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
