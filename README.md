@@ -17,10 +17,11 @@
 <h2>Proje Detayları</h2>
 
 <p>Ön İzleme</p>
-<video width="1024" height="768" controls>
-  <source src="graduation-project-cagatayturkann/client/public/videos/graduation.mp4" type="video/mp4">
+<!-- <video width="1024" height="768" controls>
+  <source src="https://streamable.com/olg5ke" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+</video> -->
+<div style="width:100%;height:0px;position:relative;padding-bottom:56.250%;"><iframe src="https://streamable.com/e/olg5ke" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
 
 <h3>Teknolojier</h3>
 <ul>
