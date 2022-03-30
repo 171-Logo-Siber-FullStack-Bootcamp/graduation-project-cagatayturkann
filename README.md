@@ -1,9 +1,8 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7359734&assignment_repo_type=AssignmentRepo)
 # Logo Siber Güvenlik ve Ağ Teknolojileri Full Stack Bootcamp Bitirme Projesi
 
 - Tek sayfadan oluşacak bir e-ticaret sitesi
 
-## Proje Detayları:
+## Proje Hakkında:
 
 - Vue.js ile tek sayfadan oluşan bir e-ticaret sistemi tasarlayacağız.
 - 10 adet kategori olacak.
@@ -14,3 +13,71 @@
 - Winston kullanılacak.
 - Ürüne tıkladığımız zaman bir kutusu ekrana gelecek ve ürünün bilgileri yer alacak.
 - Relational veritabanı için PostgreSQL kullanılacak.
+
+<h2>Proje Detayları</h2>
+
+<p>Ön İzleme</p>
+<video width="1024" height="768" controls>
+  <source src="../../graduation-project-cagatayturkann/client/public/videos/graduation.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h3>Teknolojier</h3>
+<ul>
+  <li>Front-End: VueJS</li>
+  <li>Database: PostgreSQL with Sequelize</li>
+  <li>Rest API and Server: ExpressJs</li>
+  <li>Back-End: NodeJs</li>
+  <li>Search Process: ElasticJs</li>
+  <li>Password Hash: Bcrypt</li>
+  <li>Loglama: Winston</li>
+</ul>
+
+<h4>Sayfalar ve İşlevler</h4>
+<ul>
+  <li>Admin DashBoard
+    <ul>
+      <li>Product CRUD</li>
+      <li>User CRUD</li>
+      <li>Profile Page</li>
+    </ul>
+  </li>
+  <li>Main Site
+    <ul>
+      <li>Home Page</li>
+      <li>Product Page</li>
+      <li>About Page</li>
+      <li>Contact Page</li>
+      <li>Result Page</li>
+    </ul>
+  </li>
+</ul>
+
+<h5>Yapılacak Düzenlemeler ve Eklenecek Özellikler</h5>
+<ul>
+  <li>Header Görselleri</li>
+  <li>Sepete Ekle</li>
+  <li>Fake Ödeme</li>
+  <li>Görsel Düzenlemeler</li>
+</ul>
+
+
+
+
+# client
+
+## Project setup
+```
+cd client
+npm install
+npm run serve
+```
+
+# server
+
+## Project setup
+```
+cd psqlserver
+npm install
+npm run dev
+```
