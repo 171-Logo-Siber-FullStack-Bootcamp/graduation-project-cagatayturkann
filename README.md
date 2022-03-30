@@ -17,9 +17,7 @@
 <h2>Proje Detayları</h2>
 
 <p>Ön İzleme</p>
-<video width="1024" height="768" controls>
-  <source src="https://streamable.com/olg5ke" type="video/mp4">
-</video>
+https://streamable.com/olg5ke
 
 <h3>Teknolojier</h3>
 <ul>
