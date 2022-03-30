@@ -18,7 +18,7 @@
 
 <p>Ön İzleme</p>
 https://streamable.com/olg5ke
-<iframe src="https://streamable.com/e/olg5ke?autoplay=1" width="1365" height="768" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+<video src="https://streamable.com/e/olg5ke?autoplay=1" width="1365" height="768" frameborder="0" allowfullscreen allow="autoplay"></video>
 <h3>Teknolojier</h3>
 <ul>
   <li>Front-End: VueJS</li>
