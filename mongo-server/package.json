@@ -1,0 +1,25 @@
+{
+  "name": "mongo-server",
+  "version": "1.0.0",
+  "description": "Mongo Server for Graduation Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "server",
+    "express",
+    "api"
+  ],
+  "author": "Çağatay Türkan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7"
+  }
+}
