@@ -4,8 +4,6 @@ module.exports = {
 	HOST: 'localhost',
 	USER: process.env.DB_USER,
 	PASSWORD: process.env.DB_PASS,
-	// USER: 'postgres',
-	// PASSWORD: 'xmelekx12',
 	DB: 'ecommercedb',
 	dialect: 'postgres',
 	pool: {

@@ -1,5 +1,6 @@
 const { v4: uuid } = require('uuid'); //For generating ID's
 
+//creating product model
 module.exports = (sequelize, Sequelize) => {
 	const Product = sequelize.define('product', {
 		id: {

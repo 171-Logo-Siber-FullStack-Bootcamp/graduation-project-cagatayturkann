@@ -1,3 +1,4 @@
+//requiring necessary modules and files etc.
 const db = require('../models');
 const fs = require('fs');
 const fsExtra = require('fs-extra');
@@ -111,7 +112,7 @@ const addProduct = async (req, res) => {
 	product.image = imageName;
 	let id = '';
 	try {
-		await Product.create(product).then((response) => {
+		await Product.create(product).then((response) => { //adding product to db and elastic server at the same time
 			id = response.id;
 			elasticClient
 				.index({
@@ -166,7 +167,7 @@ const updateProduct = async (req, res) => {
 		productInfo.image = newImage;
 		const product = await Product.update(productInfo, {
 			where: { id: productID },
-		}).then(() => {
+		}).then(() => { //updating product to db and elastic server at the same time
 			elasticClient
 				.update({
 					index: 'products',
@@ -220,7 +221,7 @@ const deleteProduct = async (req, res) => {
 			where: { id: productID },
 		}).then(() => {
 			elasticClient
-				.delete({
+				.delete({ //deleting product from db and elastic server at the same time
 					index: 'products',
 					id: productID,
 				})
@@ -246,7 +247,7 @@ const deleteAllProduct = async (req, res) => {
 		const product = await Product.destroy({
 			truncate: true,
 		}).then(() => {
-			axios.delete('http://localhost:9200/products');
+			axios.delete('http://localhost:9200/products'); //deleting all product from db and elastic server at the same time and clearing uploads file
 			fsExtra
 				.emptyDir('./uploads')
 				.then(() => {

@@ -1,3 +1,4 @@
+//requiring necessary modules, files etc. 
 const db = require('../models');
 const User = db.users;
 const Op = db.sequelize.Op;
@@ -6,6 +7,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const logger = require('../logger');
 
+//register service 
 const signUp = async (req, res, next) => {
 	const newUser = {
 		name: req.body.name,
@@ -22,6 +24,7 @@ const signUp = async (req, res, next) => {
 		});
 };
 
+//login service
 const signIn = async (req, res) => {
 	try {
 		await User.findOne({
@@ -35,7 +38,7 @@ const signIn = async (req, res) => {
 						error: 'Invalid credentials',
 					});
 				}
-				if (!bcrypt.compareSync(req.body.password, user.password)) {
+				if (!bcrypt.compareSync(req.body.password, user.password)) { //encrypting password for database
 					logger.log(
 						'error',
 						'Error Detail: Password incorrect! Please try again.'
@@ -69,6 +72,7 @@ const signIn = async (req, res) => {
 	}
 };
 
+//sample data and service for tokenize data
 const getUser = async (req, res) => {
 	let token = req.headers.token;
 	jwt.verify(token, 'secretkey', (err, decoded) => {
